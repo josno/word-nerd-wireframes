@@ -24,7 +24,8 @@ nav {
 	z-index: 10;
 }
 
-.home-page-title {
+.home-page-title,
+.end-message {
 	margin-top: 10vh;
 }
 
