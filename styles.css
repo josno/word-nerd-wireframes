@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: #444;
+	text-align: center;
+	line-height: 1.5;
+}
+
+nav,
+footer {
+	padding: 1% 0;
+	background-color: #aaa;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+
+.game-container {
+	margin-top: 5rem;
+}
+
+.list-of-games {
+	border: 2px solid black;
+}
+
+.create-game-button {
+	margin: 4rem;
+	color: brown;
+}
+
+.input-container {
+	margin: 10vh;
+	border: 2px solid black;
+	display: flex;
+}
+
+input {
+	border: 3px solid purple;
+	height: 60vh;
+	flex-grow: 3;
+	text-align: left;
+	font-size: 3rem;
+	text-align: left;
+	padding: 0.4em;
+	padding-bottom: 50vh;
+}
+
+.preview-box {
+	border: 2px solid purple;
+	height: 60vh;
+	flex-grow: 2;
+}
+
+.submit-input {
+	margin-top: 3rem;
+	height: 10vh;
+	width: 10vw;
+	font-size: 2rem;
+}
+
+.submit-cancel {
+	margin-top: 3rem;
+	height: 10vh;
+	width: 10vw;
+	font-size: 2rem;
+}
+
+.ready-message,
+.pass-the-ball {
+	margin-top: 20vh;
+}
+
+img {
+	height: 20vh;
+}
+
+.scrambled-word {
+	font-family: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 100px;
+	font-style: bolder;
+}
+
+.game-controls {
+	display: flex;
+	justify-content: space-around;
+}
