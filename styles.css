@@ -24,9 +24,11 @@ nav {
 	z-index: 10;
 }
 
+/*Titles*/
 .home-page-title,
 .end-message,
-.game-instructions {
+.game-instructions,
+.input-instructions {
 	margin-top: 10vh;
 }
 
@@ -36,6 +38,12 @@ nav {
 
 .list-of-games {
 	border: 2px solid black;
+	font-size: 18px;
+	text-align: left;
+	padding-left: 0.4rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70vw;
 }
 
 .create-game-button {
@@ -44,40 +52,43 @@ nav {
 }
 
 .input-container {
-	margin: 10vh;
 	border: 2px solid black;
 	display: flex;
+	flex-direction: column;
+	width: 60vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10vh;
+	margin-bottom: 5px;
 }
 
-input {
-	border: 3px solid purple;
+.input-box {
+	border: 2px solid purple;
 	height: 60vh;
-	flex-grow: 3;
 	text-align: left;
-	font-size: 3rem;
-	text-align: left;
-	padding: 0.4em;
-	padding-bottom: 50vh;
+	padding-left: 0.4em;
+	font-size: 20px;
+	padding-bottom: 55vh;
+	flex-grow: 2;
 }
 
 .preview-box {
 	border: 2px solid purple;
 	height: 60vh;
-	flex-grow: 2;
+	flex-grow: 5;
 }
 
-.submit-input {
-	margin-top: 3rem;
-	height: 10vh;
-	width: 10vw;
-	font-size: 2rem;
+.submit-button-container {
+	margin-left: auto;
+	margin-right: auto;
 }
 
+.submit-input,
 .submit-cancel {
-	margin-top: 3rem;
-	height: 10vh;
-	width: 10vw;
-	font-size: 2rem;
+	margin: 5px;
+	height: 5vh;
+	font-size: 1.5rem;
+	border: 2px solid black;
 }
 
 .ready-message,
@@ -91,11 +102,62 @@ img {
 
 .scrambled-word {
 	font-family: 'Arial Black', 'Helvetica Neue', Helvetica, sans-serif;
-	font-size: 100px;
+	font-size: 50px;
 	font-style: bolder;
 }
 
 .game-controls {
 	display: flex;
 	justify-content: space-around;
+}
+
+.form {
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid black;
+	height: fit-content;
+	width: 50vw;
+}
+
+.form-tab,
+.input-submit-button {
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+	border: 2px solid black;
+	margin: 10px;
+	font-size: 30px;
+}
+
+ul {
+	padding: 0px;
+}
+
+.form-input {
+	margin-left: auto;
+	margin-right: auto;
+	height: 5vh;
+	width: 30vw;
+	margin: 10px;
+	font-size: 26px;
+	padding: 0.4rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 767px) {
+	.input-container {
+		flex-direction: row;
+	}
+
+	.submit-input,
+	.submit-cancel {
+		width: 10vw;
+	}
+
+	.scrambled-word {
+		font-size: 100px;
+	}
 }
